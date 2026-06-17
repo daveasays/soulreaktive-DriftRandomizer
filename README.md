@@ -18,7 +18,7 @@ Learn about building extensions: https://ableton.github.io/extensions-sdk/
 
 **Usage:**
 Right-click on a MIDI track (clip vew or arrangment view) containing a Drift 
-→ search in extention menu: Soulreaktive-DriftRandomizer 
+→ search in extention menu: **Soulreaktive-DriftRandomizer **
 **Randomize Drift**
 
 
