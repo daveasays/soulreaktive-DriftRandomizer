@@ -7,6 +7,8 @@ This is another cool starting point, when you find somthing sounding good, you c
 
 You can choose a pourcentage of randomness from 0 to 100%. Initial start is 50%
 
+![Preview](assets/preview.png)
+
 Btw, the number of Unison voices is not exposed by the SDK. There are no "Voices" or "Poly" parameters. Ableton simply doesn't expose it.
 What the SDK does expose for Unison is only "Unison Amount"—which is already randomized by the current code.
 
