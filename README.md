@@ -2,10 +2,10 @@
 
 An Ableton Live extension built with `@ableton-extensions/sdk`.
 
-I always why Ableton add a random clickable button to their Instruments& Fx, now it's possible with this 'lil extension.
-This is another cool starting point, then go further in sound designing Drift.
+I always wish Ableton add a random clickable button to their Instruments & Fx devices (not when they are racked), now it's possible with this 'lil extension.
+This is another cool starting point, when you find somthing sounding good, you can go further in sound designing Drift, or simply save this state as new preset.
 
-You can choose a pourcentage of randomness.
+You can choose a pourcentage of randomness from 0 to 100%. Initial start is 50%
 
 Btw, the number of Unison voices is not exposed by the SDK. There are no "Voices" or "Poly" parameters. Ableton simply doesn't expose it.
 What the SDK does expose for Unison is only "Unison Amount"—which is already randomized by the current code.
