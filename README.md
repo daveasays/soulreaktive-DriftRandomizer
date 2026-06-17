@@ -15,7 +15,8 @@ Global volume is set to -12db for each random, to prevent bad surprise.
 ## Get Started
 
 Learn about building extensions: https://ableton.github.io/extensions-sdk/
-Usage:
+
+**Usage:**
 Right-click on a MIDI track (clip vew or arrangment view) containing a Drift → search in extention menu: soulreaktive-driftrandomizer 
 **Randomize Drift**
 
