@@ -1,40 +1,40 @@
-# soulreaktive-driftrandomizer-v1-0
+# Soulreaktive — Drift Randomizer
 
-An Ableton Live extension built with `@ableton-extensions/sdk`.
+I always wish Ableton would add a random clickable button to their Instruments & Fx devices (not when they are racked), now it's possible with this 'lil extension. This is another cool starting point, when you find something sounding good, you can go further in sound designing Drift, or simply save this state as a new preset.
 
-I always wish Ableton add a random clickable button to their Instruments & Fx devices (not when they are racked), now it's possible with this 'lil extension.
-This is another cool starting point, when you find somthing sounding good, you can go further in sound designing Drift, or simply save this state as new preset.
-
-You can choose a pourcentage of randomness from 0 to 100%. Initial start is 50%
+You can choose a percentage of randomness from 0 to 100%. Initial start is 50%.
 
 ![Preview](assets/preview.png)
 
-Btw, the number of Unison voices is not exposed by the SDK. There are no "Voices" or "Poly" parameters. Ableton simply doesn't expose it.
-What the SDK does expose for Unison is only "Unison Amount"—which is already randomized by the current code.
+## Installation
 
-Global volume is set to -12db for each random, to prevent bad surprise.
+Double-click the `.ablx` file with Live Beta open (Developer Mode enabled in Preferences → Extensions).
 
-## Get Started
+## Usage
 
-Learn about building extensions: https://ableton.github.io/extensions-sdk/
+Right-click on a MIDI track (clip view or arrangement view) containing a Drift → search in extension menu: ***Soulreaktive - Drift Randomizer*** → Start Randomize Drift
 
-**Usage:**
-Right-click on a MIDI track (clip vew or arrangment view) containing a Drift 
-→ search in extention menu: **Soulreaktive-DriftRandomizer**
-Start Randomize Drift
+## What gets randomized
 
+- Oscillators 1 and 2 — 75% chance of being ON each
+- Noise oscillator — 30% chance of being ON
+- Low Pass filter (Freq, Res, Type, Key tracking)
+- High Pass filter
+- Filter routing per oscillator — 75% chance of being ON
+- LFO (Wave, Rate, Amount, Modulation source)
+- Envelope 1 and 2 (Attack, Decay, Sustain, Release)
+- Cyclic Envelope (Rate, Tilt, Hold)
+- Modulation Matrix (Amounts and Destinations)
+- Oscillator shapes and detune
+- Poly Voice Depth, Spread, Strength, Thickness, Drift amount
+- Pitch Bend range
 
-## Setup
+## What stays locked
 
-The path to Ableton Live's Extension Host module is stored in `.env` as
-`EXTENSION_HOST_PATH`. The generator filled this in for you; edit it if your
-install moves.
-
-## Scripts
-
-```sh
-npm start                  # build + run in Live's Extension Host
-npm run build              # production bundle of src/extension.ts
-npm run build:dev          # dev bundle (sourcemaps, not minified)
-npm run package            # build for production + create a .ablx archive
-```
+- Volume — forced to -12dB
+- Transpose — untouched
+- Osc 1 and 2 Octave — untouched
+- Voice Mode — always Poly
+- Legato — always OFF
+- Device On — always ON
+- At least one oscillator always active
